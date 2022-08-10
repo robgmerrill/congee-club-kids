@@ -1,4 +1,4 @@
-import logo from "../public/logo.svg";
+import logo from "../public/logo1.png";
 import Image from "next/image";
 import Link from "next/link";
 import { animateScroll as scroll } from "react-scroll";
@@ -6,14 +6,18 @@ import { animateScroll as scroll } from "react-scroll";
 export default function Nav() {
   return (
     <ul className="flex justify-around items-center space-between border-b-8 border-red-400 h-36 w-full text-2xl">
-      <li>Home</li>
-      <li onClick={() => scroll.scrollTo(700)} className="cursor-pointer">
-        About
-      </li>
-      <li onClick={() => scroll.scrollTo(700)} className="cursor-pointer">
-        Contact
-      </li>
-      <Image src={logo} alt="logo" width="120px" />
+      <Link href="/">
+        <li className="cursor-pointer">Home</li>
+      </Link>
+      <Link href="/about">
+        <li className="cursor-pointer">About</li>
+      </Link>
+      <Link href="/contact">
+        <li className="cursor-pointer">Contact</li>
+      </Link>
+      <div className="h-24 w-24">
+        <Image src={logo} alt="logo" fill="responsive" />
+      </div>
 
       <Link href="https://congee-club-kids.myshopify.com/">
         <li className="cursor-pointer">Shop</li>

@@ -7,7 +7,7 @@ export default function Contact() {
       className="flex justify-center items-center"
     >
       <div>
-        <h2>Contact Us</h2>
+        <h2 className="text-4xl">Contact Us:</h2>
         <ContactForm />
       </div>
     </div>

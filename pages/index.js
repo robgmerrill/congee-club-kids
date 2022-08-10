@@ -5,14 +5,22 @@ import Nav from "../components/Nav.js";
 import Hero from "../components/Hero.js";
 import About from "../components/About.js";
 import Contact from "../components/Contact";
+import { motion, useScroll } from "framer-motion";
+import Footer from "../components/Footer";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
   return (
-    <div>
-      <Nav />
-      <Hero />
-      <About />
-      <Contact />
-    </div>
+    <>
+      <div className="h-full">
+        <motion.div
+          style={{ scaleX: scrollYProgress }}
+          className="progress-bar"
+        />
+        <Nav />
+        <Hero />
+        <Footer />
+      </div>
+    </>
   );
 }

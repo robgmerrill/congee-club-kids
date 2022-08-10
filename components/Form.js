@@ -12,9 +12,25 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div>
           <label htmlFor="email">Email Address</label>
-          <input id="email" type="email" name="email" />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email address"
+          />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
+        <div>
+          <label htmlFor="name">name</label>
+          <input
+            id="name"
+            type="name"
+            name="name"
+            placeholder="Please provide name"
+          />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+        </div>
+
         <div>
           <label>Message</label>
           <textarea id="message" name="message" />

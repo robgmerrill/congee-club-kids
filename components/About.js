@@ -21,6 +21,7 @@ export default function About() {
               alt="Mona Lisa"
               height="360px"
               width="360px"
+              className="rounded-xl shadow-2xl"
             />
           </motion.div>
         </div>
@@ -33,6 +34,7 @@ export default function About() {
               alt="Mona Lisa"
               height="360px"
               width="360px"
+              className="rounded-xl shadow-2xl"
             />
           </motion.div>
         </div>
