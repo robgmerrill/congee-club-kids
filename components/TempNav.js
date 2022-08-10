@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
+import Logo from "../public/logo1.png";
+import Image from "next/image";
 
 function NavLink({ to, children }) {
   return (
@@ -20,7 +22,7 @@ function MobileNav({ open, setOpen }) {
         {" "}
         {/*logo container*/}
         <Link className="text-xl font-semibold" href="/">
-          LOGO
+          <Image src={Logo} width="48px" height="48px" />
         </Link>
       </div>
       <div className="flex flex-col ml-4">
@@ -69,9 +71,11 @@ export default function Navbar() {
     <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
-        <Link className="text-2xl font-semibold" href="/">
-          LOGO
-        </Link>
+        {!open && (
+          <Link className="text-2xl font-semibold" href="/">
+            <Image src={Logo} width="48px" height="48px" />
+          </Link>
+        )}
       </div>
       <div className="w-9/12 flex justify-end items-center">
         <div
