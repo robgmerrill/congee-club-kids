@@ -11,29 +11,39 @@ export default function ContactForm() {
     <div className="bg-white p-4 rounded-lg shadow-lg w-96 h-96">
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div>
-          <label htmlFor="email">Email Address</label>
+          <label className="block" htmlFor="email">
+            Email Address:
+          </label>
           <input
             id="email"
             type="email"
             name="email"
             placeholder="email address"
+            className="border px-2 rounded-md"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div>
-          <label htmlFor="name">name</label>
+          <label htmlFor="name" className="block">
+            Name:
+          </label>
           <input
             id="name"
             type="name"
             name="name"
             placeholder="Please provide name"
+            className="border px-2 rounded-md"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
 
         <div>
-          <label>Message</label>
-          <textarea id="message" name="message" />
+          <label className="block">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            className="border px-2 rounded-md"
+          />
           <ValidationError
             prefix="Message"
             field="message"
@@ -41,7 +51,11 @@ export default function ContactForm() {
           />
         </div>
 
-        <button type="submit" disabled={state.submitting}>
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="bg-yellow-300 rounded-lg mt-4"
+        >
           Submit
         </button>
         <ValidationError errors={state.errors} />

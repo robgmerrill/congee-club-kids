@@ -4,12 +4,10 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <div className="h-full">
-        <Nav />
-        <Hero />
-        <Footer />
-      </div>
-    </>
+    <div className="h-full bg-blue-200">
+      <Nav />
+      <Hero />
+      <Footer />
+    </div>
   );
 }

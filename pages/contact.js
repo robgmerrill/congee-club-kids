@@ -5,10 +5,12 @@ import TempNav from "../components/TempNav";
 
 export default function ContactPage() {
   return (
-    <>
+    <div className="border h-max">
       <TempNav />
-      <Contact />
+      <div className="h-2/3">
+        <Contact />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
