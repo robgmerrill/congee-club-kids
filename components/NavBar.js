@@ -61,7 +61,7 @@ export default function Navbar() {
                 About us
               </a>
             </Link>
-            <Link href="/store">
+            <Link href="https://congee-club-kids.myshopify.com/">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
                 Store
               </a>

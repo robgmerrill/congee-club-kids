@@ -1,11 +1,11 @@
 import About from "../components/About";
-import Nav from "../components/TempNav";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 export default function AboutPage() {
   return (
     <>
-      <Nav />
+      <NavBar />
       <About />
       <Footer />
     </>
