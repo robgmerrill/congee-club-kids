@@ -14,7 +14,7 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${
+      className={`absolute top-0 left-0 h-screen w-screen bg-white border-8 border-blue-500 transform ${
         open ? "-translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >

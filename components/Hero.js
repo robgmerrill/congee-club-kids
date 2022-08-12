@@ -7,11 +7,11 @@ export default function Hero() {
     <>
       <div className="" style={{ backgroundColor: "#97FFE5", height: "600px" }}>
         <div
-          className="md:flex justify-center items-center border-8"
+          className="flex justify-center items-center flex-col md:flex-row"
           style={{ height: "600px" }}
         >
           <div className="md:w-1/2">
-            <div className="flex justify-center items-center flex-col text-4xl md:text-9xl">
+            <div className="flex justify-center items-center flex-col text-6xl md:text-9xl">
               <h2>Congee</h2>
               <p>Club Kids</p>
             </div>
@@ -29,8 +29,8 @@ export default function Hero() {
           <div className="md:w-1/2 flex justify-center items-center">
             <Image
               src={steamer}
-              height="150px"
-              width="150px"
+              height="350px"
+              width="350px"
               alt="steamer basket"
             />
           </div>
