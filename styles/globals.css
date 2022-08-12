@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "AnniesHandwriting", -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: "Caveat Brush", -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   height: 100vh;

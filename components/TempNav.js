@@ -58,7 +58,7 @@ function MobileNav({ open, setOpen }) {
             }, 100)
           }
         >
-          shop
+          Shop
         </Link>
       </div>
     </div>
