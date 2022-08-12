@@ -10,7 +10,7 @@ export default function ContactForm() {
   return (
     <div
       className="bg-white p-4 rounded-lg shadow-lg h-96"
-      style={{ width: "600px" }}
+      style={{ width: "400px" }}
     >
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div>

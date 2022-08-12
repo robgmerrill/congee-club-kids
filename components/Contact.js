@@ -3,7 +3,7 @@ import ContactForm from "./Form";
 export default function Contact() {
   return (
     <div
-      style={{ backgroundColor: "#97FFE5", height: "100vw" }}
+      style={{ backgroundColor: "#97FFE5", height: "100vh" }}
       className="flex justify-center pt-24"
     >
       <div>
