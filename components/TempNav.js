@@ -22,10 +22,10 @@ function MobileNav({ open, setOpen }) {
         {" "}
         {/*logo container*/}
         <Link className="text-xl font-semibold" href="/">
-          <Image src={Logo} width="48px" height="48px" />
+          <Image src={Logo} width="56px" height="56px" alt="logo" />
         </Link>
       </div>
-      <div className="flex flex-col ml-4">
+      <div className="flex flex-col ml-4 space-y-2 mt-4">
         <Link
           className="text-xl font-medium my-4"
           href="/about"
@@ -73,13 +73,13 @@ export default function Navbar() {
       <div className="w-3/12 flex items-center">
         {!open && (
           <Link className="text-2xl font-semibold" href="/">
-            <Image src={Logo} width="48px" height="48px" />
+            <Image src={Logo} width="56px" height="56px" alt="logo" />
           </Link>
         )}
       </div>
-      <div className="w-9/12 flex justify-end items-center">
+      <div className="w-9/12 flex justify-end items-center ">
         <div
-          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden "
           onClick={() => {
             setOpen(!open);
           }}
@@ -102,7 +102,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="hidden md:flex">
+        <div className="hidden md:flex space-x-4">
           <NavLink to="/contact">CONTACT</NavLink>
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/about">SHOP</NavLink>

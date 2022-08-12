@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import TestProfile from "./congee-club-test-profile.jpg";
+import MarProfile from "./mar-profile.jpg";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
             <h3>Sara</h3>
             <Image
               src={TestProfile}
-              alt="Mona Lisa"
+              alt="Sara"
               height="360px"
               width="360px"
               className="rounded-xl shadow-2xl"
@@ -30,10 +31,11 @@ export default function About() {
           <h3>Marissa</h3>
           <motion.div whileHover={{ scale: 1.1 }}>
             <Image
-              src={TestProfile}
-              alt="Mona Lisa"
+              src={MarProfile}
+              alt="Marissa Merrill"
               height="360px"
               width="360px"
+              objectFit="contain"
               className="rounded-xl shadow-2xl"
             />
           </motion.div>

@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className="border h-max">
       <TempNav />
-      <div className="h-2/3">
+      <div>
         <Contact />
       </div>
       <Footer />

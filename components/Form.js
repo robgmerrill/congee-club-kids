@@ -8,7 +8,10 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-lg w-96 h-96">
+    <div
+      className="bg-white p-4 rounded-lg shadow-lg h-96"
+      style={{ width: "600px" }}
+    >
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div>
           <label className="block" htmlFor="email">
@@ -19,7 +22,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             placeholder="email address"
-            className="border px-2 rounded-md"
+            className="border px-2 rounded-md w-full"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -32,7 +35,7 @@ export default function ContactForm() {
             type="name"
             name="name"
             placeholder="Please provide name"
-            className="border px-2 rounded-md"
+            className="border px-2 rounded-md w-full"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
@@ -42,7 +45,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            className="border px-2 rounded-md"
+            className="border px-2 rounded-md w-full"
           />
           <ValidationError
             prefix="Message"

@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import steamer from "./dim-sum-steamer.png";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -8,12 +10,12 @@ export default function Hero() {
           className="flex justify-center items-center"
           style={{ height: "600px" }}
         >
-          <div className="w-1/2 border-4 ">
+          <div className="w-1/2">
             <div className="flex justify-center items-center flex-col text-9xl">
-              <p>Congee</p>
+              <h2>Congee</h2>
               <p>Club Kids</p>
             </div>
-            <div className="text-4xl flex justify-center border-4">
+            <div className="text-4xl flex justify-center">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -25,7 +27,7 @@ export default function Hero() {
           </div>
 
           <div className="w-1/2 flex justify-center items-center">
-            Section 2
+            <Image src={steamer} />
           </div>
         </div>
       </div>
