@@ -5,27 +5,35 @@ import MarProfile from "./mar-profile.jpg";
 import { motion } from "framer-motion";
 
 const StyledCard = styled.div`
+  display: inline-block;
   width: 100%;
   /* margin-bottom: 72px; */
   .second-card {
     padding-bottom: 72px;
-    border: 2px solid green;
   }
 
   @media (min-width: 768px) {
     width: 478px;
     margin-right: 24px;
+    margin-bottom: 72px;
+
+    .second-card {
+      padding-bottom: 0;
+    }
   }
 `;
 
 export default function About() {
   return (
-    <div className="bg-red-400  text-center" style={{ height: "1800px" }}>
+    <div
+      className="  text-center"
+      style={{ height: "1800px", backgroundColor: "#97FFE5" }}
+    >
       {/* the team */}
-      <div className="bg-blue-200">
+      <div className="">
         <div className="text-6xl">The Team</div>
         <div className="text-xl  flex justify-center items-center">
-          <div className="text-xl w-1/2">
+          <div className="text-xl md:w-2/3 w-full px-8 md:px-0">
             Sara Menges and Marissa Merrill met in college and instantly became
             friends. We quickly discovered that we enjoyed working on school
             projects together and found that our ethics, styles and standards
@@ -38,7 +46,7 @@ export default function About() {
             children’s books for the AAPI community{" "}
           </div>
         </div>
-        <div className="md:flex justify-around items-center mt-12">
+        <div className=" mt-12">
           <StyledCard>
             <figure className=" bg-yellow-300 rounded-xl p-8  dark:bg-slate-800 rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
               <Image

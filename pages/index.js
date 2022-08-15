@@ -5,7 +5,7 @@ import Navbar from "../components/NavBar.js";
 
 export default function Home() {
   return (
-    <div className="h-full bg-blue-200">
+    <div className="h-full">
       <Navbar />
       <Hero />
       <Footer />
