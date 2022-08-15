@@ -1,7 +1,16 @@
 import { useForm, ValidationError } from "@formspree/react";
 
+import { useRef, useEffect } from "react";
+
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xknengrp");
+
+  const emailRef = useRef();
+
+  useEffect(() => {
+    console.log(emailRef.current);
+    emailRef.current.focus();
+  }, []);
 
   if (state.succeeded) {
     return <p>Thanks for your submission!</p>;
@@ -18,10 +27,11 @@ export default function ContactForm() {
             Email Address:
           </label>
           <input
+            ref={emailRef}
             id="email"
             type="email"
             name="email"
-            placeholder="email address"
+            placeholder="Email address"
             className="border px-2 rounded-md w-full"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -34,7 +44,7 @@ export default function ContactForm() {
             id="name"
             type="name"
             name="name"
-            placeholder="Please provide name"
+            placeholder="Please provide your name"
             className="border px-2 rounded-md w-full"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />

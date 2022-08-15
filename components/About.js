@@ -4,41 +4,117 @@ import TestProfile from "./congee-club-test-profile.jpg";
 import MarProfile from "./mar-profile.jpg";
 import { motion } from "framer-motion";
 
+const StyledCard = styled.div`
+  width: 100%;
+  /* margin-bottom: 72px; */
+  .second-card {
+    padding-bottom: 72px;
+    border: 2px solid green;
+  }
+
+  @media (min-width: 768px) {
+    width: 478px;
+    margin-right: 24px;
+  }
+`;
+
 export default function About() {
   return (
-    <div
-      className="bg-yellow-300 block text-center"
-      style={{ height: "500px" }}
-      title="section1"
-      id="about"
-    >
-      <div>Greetings from About</div>
-      <div className="flex justify-around items-center h-96">
-        <div>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <h3>Sara</h3>
-            <Image
-              src={TestProfile}
-              alt="Sara"
-              height="360px"
-              width="360px"
-              className="rounded-xl shadow-2xl"
-            />
-          </motion.div>
+    <div className="bg-red-400  text-center" style={{ height: "1800px" }}>
+      {/* the team */}
+      <div className="bg-blue-200">
+        <div className="text-6xl">The Team</div>
+        <div className="text-xl  flex justify-center items-center">
+          <div className="text-xl w-1/2">
+            Sara Menges and Marissa Merrill met in college and instantly became
+            friends. We quickly discovered that we enjoyed working on school
+            projects together and found that our ethics, styles and standards
+            complimented one another to achieve our goals and also have fun
+            along the way. Almost ten years later, Sara (a current content
+            creator, grant writer and artist) and Marissa (a current mental
+            health therapist, mother and writer) found themselves wanting to
+            tackle other fun projects that could impact others in a positive
+            manner. We are so excited to embark on this journey of publishing
+            children’s books for the AAPI community{" "}
+          </div>
         </div>
+        <div className="md:flex justify-around items-center mt-12">
+          <StyledCard>
+            <figure className=" bg-yellow-300 rounded-xl p-8  dark:bg-slate-800 rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
+              <Image
+                class="w-24 h-24  rounded-full mx-auto"
+                src={MarProfile}
+                alt=""
+                width="240"
+                height="240"
+              />
+              <div className="pt-6  text-center  space-y-4">
+                <blockquote></blockquote>
+                <figcaption className="font-medium">
+                  <div className="text-red-400 dark:text-sky-400">
+                    Sara Menges
+                  </div>
+                  <div className="text-slate-700 dark:text-slate-500">
+                    Illustrator
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+          </StyledCard>
+          <StyledCard>
+            <div className="second-card">
+              <figure className=" bg-yellow-300 rounded-3xl p-8  dark:bg-slate-800 rounded-md mx-8 md:mx-0">
+                <Image
+                  class="w-24 h-24  rounded-full mx-auto"
+                  src={MarProfile}
+                  alt=""
+                  width="240"
+                  height="240"
+                />
+                <div className="pt-6  text-center  space-y-4">
+                  <blockquote>
+                    {/* <p className="text-lg font-medium">
+                  “Tailwind CSS is the only framework that I've seen scale on
+                  large teams. It’s easy to customize, adapts to any design, and
+                  the build size is tiny.”
+                </p> */}
+                  </blockquote>
+                  <figcaption className="font-medium">
+                    <div className="text-red-400 dark:text-sky-400">
+                      Marissa Merrill
+                    </div>
+                    <div className="text-slate-700 dark:text-slate-500">
+                      Author
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
 
-        <div>
-          <h3>Marissa</h3>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Image
-              src={MarProfile}
-              alt="Marissa Merrill"
-              height="360px"
-              width="360px"
-              objectFit="contain"
-              className="rounded-xl shadow-2xl"
-            />
-          </motion.div>
+            {/* </motion.div> */}
+          </StyledCard>
+        </div>
+      </div>
+
+      {/* The mission */}
+      <div className="mt-12">
+        <div className="text-6xl">The Mission</div>
+        <div className="text-xl">
+          Congee Club Kids creates children’s books that illuminate AAPI
+          experience and celebrate AAPI culture in a kid friendly, fun and
+          creative way.{" "}
+        </div>
+      </div>
+      <div>
+        <div className="text-6xl">The Vision</div>
+        <div className="text-xl">
+          Our vision is to help kids see themselves, their traditions and their
+          cultures reflected in literature so that they can grow confident in
+          their heritage and customs...Our vision is to help kids see
+          themselves, their traditions and their cultures reflected in
+          literature so that they can grow confident in their heritage and
+          customs. Through our products, we encourage them to celebrate their
+          diversity and embrace the gift they are to the world.
         </div>
       </div>
     </div>
