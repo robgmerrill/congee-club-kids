@@ -7,6 +7,8 @@ export default function Navbar() {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
+    console.log("clicked");
+    console.log({ active });
     setActive(!active);
   };
 
@@ -16,7 +18,9 @@ export default function Navbar() {
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <Link className="text-xl font-semibold" href="/">
-              <Image src={Logo} width="56px" height="56px" alt="logo" />
+              <button onClick={handleClick}>
+                <Image src={Logo} width="56px" height="56px" alt="logo" />
+              </button>
             </Link>
           </a>
         </Link>
@@ -47,19 +51,25 @@ export default function Navbar() {
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white ">
-                Home
-              </a>
+              <button onClick={handleClick}>
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white ">
+                  Home
+                </a>
+              </button>
             </Link>
             <Link href="/contact">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
-                Contact
-              </a>
+              <button onClick={handleClick}>
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
+                  Contact
+                </a>
+              </button>
             </Link>
             <Link href="/about">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
-                About us
-              </a>
+              <button onClick={handleClick}>
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
+                  About us
+                </a>
+              </button>
             </Link>
             <Link href="https://congee-club-kids.myshopify.com/">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
