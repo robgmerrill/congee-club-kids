@@ -76,3 +76,7 @@ a {
 .light-blue {
   background-color: #e3fff8;
 }
+
+input {
+  background-color: white;
+}
