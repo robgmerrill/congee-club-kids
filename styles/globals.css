@@ -39,7 +39,7 @@ a {
   transform-origin: 0%;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -47,7 +47,7 @@ a {
     color: white;
     background: black;
   }
-}
+} */
 
 .dark-red {
   background-color: #b32f0e;
