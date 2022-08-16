@@ -77,6 +77,7 @@ a {
   background-color: #e3fff8;
 }
 
-input {
+input,
+textarea {
   background-color: white;
 }
