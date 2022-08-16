@@ -57,7 +57,7 @@ export default function About() {
         </div>
         <div className=" mt-12">
           <StyledCard>
-            <figure className=" bg-yellow-300 rounded-xl p-8  dark:bg-slate-800 rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
+            <figure className=" bg-yellow-300 rounded-xl p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
               <Image
                 class="w-24 h-24  rounded-full mx-auto"
                 src={MarProfile}
@@ -68,19 +68,15 @@ export default function About() {
               <div className="pt-6  text-center  space-y-4">
                 <blockquote></blockquote>
                 <figcaption className="font-medium">
-                  <div className="text-red-400 dark:text-sky-400 text-4xl">
-                    Sara Menges
-                  </div>
-                  <div className="text-slate-700 text-2xl dark:text-slate-500">
-                    Illustrator
-                  </div>
+                  <div className="text-red-400  text-4xl">Sara Menges</div>
+                  <div className="text-slate-700 text-2xl ">Illustrator</div>
                 </figcaption>
               </div>
             </figure>
           </StyledCard>
           <StyledCard>
             <div className="second-card">
-              <figure className=" bg-yellow-300 rounded-3xl p-8  dark:bg-slate-800  mx-8 md:mx-0">
+              <figure className=" bg-yellow-300 rounded-3xl p-8    mx-8 md:mx-0">
                 <Image
                   class="w-24 h-24  rounded-full mx-auto"
                   src={MarProfile}
@@ -97,12 +93,10 @@ export default function About() {
                 </p> */}
                   </blockquote>
                   <figcaption className="font-medium">
-                    <div className="text-red-400 dark:text-sky-400 text-4xl">
+                    <div className="text-red-400  text-4xl">
                       Marissa Merrill
                     </div>
-                    <div className="text-slate-700 dark:text-slate-500 text-2xl">
-                      Author
-                    </div>
+                    <div className="text-slate-700  text-2xl">Author</div>
                   </figcaption>
                 </div>
               </figure>
