@@ -47,3 +47,31 @@ a {
     background: black;
   }
 }
+
+.dark-red {
+  background-color: #b32f0e;
+}
+
+.light-red {
+  background-color: #ff6842;
+}
+
+.medium-red {
+  background-color: #ff5429;
+}
+
+.dark-green {
+  background-color: #00b378;
+}
+
+.light-green {
+  background-color: #29ffb9;
+}
+
+.medium-blue {
+  background-color: #97ffe5;
+}
+
+.light-blue {
+  background-color: #e3fff8;
+}

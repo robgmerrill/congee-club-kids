@@ -3,6 +3,8 @@ import Image from "next/image";
 import TestProfile from "./congee-club-test-profile.jpg";
 import MarProfile from "./mar-profile.jpg";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../lib/ThemeContext";
 
 const StyledCard = styled.div`
   display: inline-block;
@@ -24,14 +26,17 @@ const StyledCard = styled.div`
 `;
 
 export default function About() {
+  const context = useContext(ThemeContext);
+  console.log(context);
+
   return (
     <div
-      className="  text-center"
+      className="text-center md:p-12 lg:pt-12"
       style={{ height: "1800px", backgroundColor: "#97FFE5" }}
     >
       {/* the team */}
       <div className="">
-        <div className="text-6xl">The Team</div>
+        <div className="text-6xl text-red-400">The Team</div>
         <div className="text-xl  flex justify-center items-center">
           <div className="text-xl md:w-2/3 w-full px-8 md:px-0">
             Sara Menges and Marissa Merrill met in college and instantly became
@@ -53,16 +58,16 @@ export default function About() {
                 class="w-24 h-24  rounded-full mx-auto"
                 src={MarProfile}
                 alt=""
-                width="240"
-                height="240"
+                width="360"
+                height="360"
               />
               <div className="pt-6  text-center  space-y-4">
                 <blockquote></blockquote>
                 <figcaption className="font-medium">
-                  <div className="text-red-400 dark:text-sky-400">
+                  <div className="text-red-400 dark:text-sky-400 text-4xl">
                     Sara Menges
                   </div>
-                  <div className="text-slate-700 dark:text-slate-500">
+                  <div className="text-slate-700 text-2xl dark:text-slate-500">
                     Illustrator
                   </div>
                 </figcaption>
@@ -76,8 +81,8 @@ export default function About() {
                   class="w-24 h-24  rounded-full mx-auto"
                   src={MarProfile}
                   alt=""
-                  width="240"
-                  height="240"
+                  width="360"
+                  height="360"
                 />
                 <div className="pt-6  text-center  space-y-4">
                   <blockquote>
@@ -88,10 +93,10 @@ export default function About() {
                 </p> */}
                   </blockquote>
                   <figcaption className="font-medium">
-                    <div className="text-red-400 dark:text-sky-400">
+                    <div className="text-red-400 dark:text-sky-400 text-4xl">
                       Marissa Merrill
                     </div>
-                    <div className="text-slate-700 dark:text-slate-500">
+                    <div className="text-slate-700 dark:text-slate-500 text-2xl">
                       Author
                     </div>
                   </figcaption>
@@ -106,7 +111,7 @@ export default function About() {
 
       {/* The mission */}
       <div className="mt-12">
-        <div className="text-6xl">The Mission</div>
+        <div className="text-6xl text-red-400">The Mission</div>
         <div className="text-xl">
           Congee Club Kids creates children’s books that illuminate AAPI
           experience and celebrate AAPI culture in a kid friendly, fun and
@@ -114,7 +119,7 @@ export default function About() {
         </div>
       </div>
       <div>
-        <div className="text-6xl">The Vision</div>
+        <div className="text-6xl text-red-400">The Vision</div>
         <div className="text-xl">
           Our vision is to help kids see themselves, their traditions and their
           cultures reflected in literature so that they can grow confident in
