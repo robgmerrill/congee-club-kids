@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Logo from "../public/logo1.png";
 import Image from "next/image";
+import Example from "./Logo";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -18,9 +19,10 @@ export default function Navbar() {
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <Link className="text-xl font-semibold" href="/">
-              <button onClick={handleClick}>
-                <Image src={Logo} width="56px" height="56px" alt="logo" />
-              </button>
+              {/* <button onClick={handleClick}> */}
+              <Image src={Logo} width="56px" height="56px" alt="logo" />
+              {/* <Example /> */}
+              {/* </button> */}
             </Link>
           </a>
         </Link>
