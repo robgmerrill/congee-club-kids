@@ -32,7 +32,11 @@ export default function About() {
   return (
     <div
       className="text-center md:p-12 lg:pt-12"
-      style={{ height: "1800px", backgroundColor: "#97FFE5" }}
+      style={{
+        backgroundColor: "#97FFE5",
+        height: "",
+        marginBottom: "40px",
+      }}
     >
       {/* the team */}
       <div className="">
@@ -76,7 +80,7 @@ export default function About() {
           </StyledCard>
           <StyledCard>
             <div className="second-card">
-              <figure className=" bg-yellow-300 rounded-3xl p-8  dark:bg-slate-800 rounded-md mx-8 md:mx-0">
+              <figure className=" bg-yellow-300 rounded-3xl p-8  dark:bg-slate-800  mx-8 md:mx-0">
                 <Image
                   class="w-24 h-24  rounded-full mx-auto"
                   src={MarProfile}

@@ -6,8 +6,12 @@ import Footer from "../components/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <Navbar />
-      <Component {...pageProps} />
+      <div>
+        <Navbar />
+      </div>
+      <div className=" h-auto">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </ThemeProvider>
   );

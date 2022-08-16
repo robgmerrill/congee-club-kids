@@ -5,10 +5,12 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-      <div className="" style={{ backgroundColor: "#97FFE5", height: "600px" }}>
+      <div
+        style={{ backgroundColor: "#97FFE5", height: "calc(100vh - 100px)" }}
+      >
         <div
           className="flex justify-center items-center flex-col md:flex-row"
-          style={{ height: "600px" }}
+          style={{}}
         >
           <div className="md:w-1/2">
             <div className="flex justify-center items-center flex-col text-6xl md:text-9xl">

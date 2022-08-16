@@ -5,7 +5,7 @@ import Navbar from "../components/NavBar.js";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div style={{ height: "100vh" }}>
       <Hero />
     </div>
   );
