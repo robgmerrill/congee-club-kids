@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       <div>
         <Navbar />
       </div>
-      <div className=" h-auto">
+      <div className="h-auto" style={{ backgroundColor: "#97FFE5" }}>
         <Component {...pageProps} />
       </div>
       <Footer />
