@@ -9,7 +9,6 @@ import { ThemeContext } from "../lib/ThemeContext";
 const StyledCard = styled.div`
   display: inline-block;
   width: 100%;
-  /* margin-bottom: 72px; */
   .second-card {
     padding-bottom: 72px;
   }
@@ -25,19 +24,24 @@ const StyledCard = styled.div`
   }
 `;
 
+const AboutWrapper = styled.div`
+  background-color: #97ffe5;
+  margin-bottom: 40px;
+  height: 2200px;
+  @media (min-width: 478px) {
+    height: 2000px;
+  }
+  @media (min-width: 768px) {
+    height: 100%;
+  }
+`;
+
 export default function About() {
   const context = useContext(ThemeContext);
   console.log(context);
 
   return (
-    <div
-      className="text-center md:p-12 lg:pt-12"
-      style={{
-        backgroundColor: "#97FFE5",
-        height: "",
-        marginBottom: "40px",
-      }}
-    >
+    <AboutWrapper className="text-center md:p-12 lg:pt-12">
       {/* the team */}
       <div className="">
         <div className="text-6xl text-red-400">The Team</div>
@@ -85,13 +89,7 @@ export default function About() {
                   height="360"
                 />
                 <div className="pt-6  text-center  space-y-4">
-                  <blockquote>
-                    {/* <p className="text-lg font-medium">
-                  “Tailwind CSS is the only framework that I've seen scale on
-                  large teams. It’s easy to customize, adapts to any design, and
-                  the build size is tiny.”
-                </p> */}
-                  </blockquote>
+                  <blockquote></blockquote>
                   <figcaption className="font-medium">
                     <div className="text-red-400  text-4xl">
                       Marissa Merrill
@@ -128,6 +126,6 @@ export default function About() {
           diversity and embrace the gift they are to the world.
         </div>
       </div>
-    </div>
+    </AboutWrapper>
   );
 }
