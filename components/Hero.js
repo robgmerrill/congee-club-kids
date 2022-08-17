@@ -18,7 +18,8 @@ export default function Hero() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-yellow-300 rounded-3xl  p-4 w-64"
+              className="rounded-3xl  p-4 w-64"
+              style={{ backgroundColor: "#EBE152" }}
             >
               Button
             </motion.button>
