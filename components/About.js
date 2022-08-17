@@ -10,7 +10,7 @@ const StyledCard = styled.div`
   display: inline-block;
   width: 100%;
   .second-card {
-    padding-bottom: 72px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: 768px) {
@@ -41,7 +41,7 @@ export default function About() {
   console.log(context);
 
   return (
-    <AboutWrapper className="text-center md:p-12 lg:pt-12">
+    <AboutWrapper className="text-center p-8 lg:pt-12">
       {/* the team */}
       <div className="">
         <div className="text-6xl text-red-400">The Team</div>
@@ -106,7 +106,7 @@ export default function About() {
       </div>
 
       {/* The mission */}
-      <div className="mt-12">
+      <div className="mb-6">
         <div className="text-6xl text-red-400">The Mission</div>
         <div className="text-xl">
           Congee Club Kids creates children’s books that illuminate AAPI
