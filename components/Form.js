@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   return (
     <div
-      className="bg-white p-4 rounded-lg shadow-lg h-72"
+      className="bg-white p-4 rounded-lg shadow-lg h-84"
       style={{ width: "400px" }}
     >
       <form onSubmit={handleSubmit} className="flex flex-col">
@@ -54,6 +54,7 @@ export default function ContactForm() {
           <label className="block">Message:</label>
           <textarea
             id="message"
+            rows="6"
             name="message"
             className="border px-2 rounded-md w-full"
           />
