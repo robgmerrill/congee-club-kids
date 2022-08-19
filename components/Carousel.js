@@ -48,10 +48,10 @@ const Header = styled.h2`
 export default class NextJsCarousel extends Component {
   render() {
     return (
-      <div className="h-full relative">
+      <div className="h-full  relative">
         <Carousel showThumbs={false}>
           {/* The Team */}
-          <div className="bg-green-400 h-full absolute top-0 bottom-0 flex flex-col items-center">
+          <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>The Team</Header>
             {/* paragraph */}
@@ -69,7 +69,7 @@ export default class NextJsCarousel extends Component {
             </p>
           </div>
           {/* Marissa Merrill */}
-          <div className="bg-purple-300 h-full w-full absolute top-0 bottom-0 flex flex-col items-center">
+          <div className="bg-purple-300 h-full w-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>Marissa - Author</Header>
             {/* paragraph */}
@@ -86,7 +86,7 @@ export default class NextJsCarousel extends Component {
             </StyledCard>
           </div>
           {/* Sara Menges */}
-          <div className="bg-yellow-300 h-full w-full absolute top-0 bottom-0 flex flex-col items-center">
+          <div className="bg-yellow-300 h-full w-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>Sara Menges - Illustrator</Header>
             {/* paragraph */}
@@ -105,7 +105,7 @@ export default class NextJsCarousel extends Component {
 
           {/* The mission placeholder */}
           {/* The Mission */}
-          <div className="bg-green-400 h-full absolute top-0 bottom-0 flex flex-col items-center">
+          <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>The Mission</Header>
             {/* paragraph */}
@@ -116,7 +116,7 @@ export default class NextJsCarousel extends Component {
             </p>
           </div>
           {/* The Vision */}
-          <div className="bg-blue-300 h-full absolute top-0 bottom-0 flex flex-col items-center">
+          <div className="bg-blue-300 h-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>The Vision</Header>
             {/* paragraph */}
@@ -130,28 +130,21 @@ export default class NextJsCarousel extends Component {
               their diversity and embrace the gift they are to the world.
             </p>
           </div>
-          <div className="bg-purple-300 h-full flex justify-center items-center">
-            <StyledCard>
-              <figure className="rounded-xl p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
-                <Image
-                  class="w-24 h-24  rounded-full mx-auto"
-                  src={MarProfile}
-                  alt=""
-                  width="360"
-                  height="360"
-                />
-                <div className="pt-6  text-center  space-y-4">
-                  <blockquote></blockquote>
-                  <figcaption className="font-medium">
-                    <div className="text-red-400  text-4xl">
-                      Marissa Merrill
-                    </div>
-                    <div className="text-slate-700 text-2xl ">Author</div>
-                  </figcaption>
-                </div>
-              </figure>
-            </StyledCard>
-          </div>
+          {/* <div className="bg-blue-300 absolute top-0 bottom-0 flex flex-col items-center">
+            lkj;lsdfjds
+          </div> */}
+          {/* <div>
+            <Header>The Vision</Header>
+            <p className="text-2xl w-4/5">
+              Our vision is to help kids see themselves, their traditions and
+              their cultures reflected in literature so that they can grow
+              confident in their heritage and customs...Our vision is to help
+              kids see themselves, their traditions and their cultures reflected
+              in literature so that they can grow confident in their heritage
+              and customs. Through our products, we encourage them to celebrate
+              their diversity and embrace the gift they are to the world.
+            </p>
+          </div> */}
         </Carousel>
       </div>
     );

@@ -43,7 +43,6 @@ export default function About() {
 
   return (
     <AboutWrapper className="text-center p-8 lg:pt-12">
-      <Carousel />
       {/* the team */}
       <div className="">
         <div className="text-6xl text-red-400">The Team</div>
