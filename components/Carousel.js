@@ -55,13 +55,18 @@ export default class NextJsCarousel extends Component {
   render() {
     return (
       <div className="h-full  relative">
-        <Carousel showThumbs={false} showArrows={true}>
+        <Carousel
+          showThumbs={false}
+          showArrows={true}
+          showIndicators={false}
+          showStatus={false}
+        >
           {/* The Team */}
           <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
             <Header>The Team</Header>
             {/* paragraph */}
-            <p className="text-2xl w-4/5">
+            <p className="text-xl md:text-2xl w-4/5">
               Sara Menges and Marissa Merrill met in college and instantly
               became friends. We quickly discovered that we enjoyed working on
               school projects together and found that our ethics, styles and
