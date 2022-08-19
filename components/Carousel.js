@@ -6,7 +6,7 @@ import MarProfile from "./mar-profile.jpg";
 import Image from "next/image";
 
 const StyledCard = styled.div`
-  margin-top: -48px;
+  margin-top: -24px;
   height: 100%;
   display: inline-block;
   width: 100%;
