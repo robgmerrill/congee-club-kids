@@ -5,6 +5,7 @@ import MarProfile from "./mar-profile.jpg";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../lib/ThemeContext";
+import Carousel from "./Carousel";
 
 const StyledCard = styled.div`
   display: inline-block;
@@ -42,6 +43,7 @@ export default function About() {
 
   return (
     <AboutWrapper className="text-center p-8 lg:pt-12">
+      <Carousel />
       {/* the team */}
       <div className="">
         <div className="text-6xl text-red-400">The Team</div>
@@ -60,24 +62,6 @@ export default function About() {
           </div>
         </div>
         <div className=" mt-12">
-          <StyledCard>
-            <figure className=" bg-yellow-300 rounded-xl p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
-              <Image
-                class="w-24 h-24  rounded-full mx-auto"
-                src={MarProfile}
-                alt=""
-                width="360"
-                height="360"
-              />
-              <div className="pt-6  text-center  space-y-4">
-                <blockquote></blockquote>
-                <figcaption className="font-medium">
-                  <div className="text-red-400  text-4xl">Sara Menges</div>
-                  <div className="text-slate-700 text-2xl ">Illustrator</div>
-                </figcaption>
-              </div>
-            </figure>
-          </StyledCard>
           <StyledCard>
             <div className="second-card">
               <figure className=" bg-yellow-300 rounded-3xl p-8    mx-8 md:mx-0">
