@@ -26,12 +26,12 @@ const StyledCard = styled.div`
 `;
 
 const Header = styled.h2`
-  font-size: 4rem;
+  font-size: 2rem;
 
   margin: 0 auto;
   /* margin-top: 3rem; */
-  margin-bottom: 3rem;
-  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
   width: 80%;
   position: relative;
   z-index: 2;
@@ -43,13 +43,19 @@ const Header = styled.h2`
     text-transform: uppercase;
     padding: 0.5rem 1rem;
   }
+
+  @media (min-width: 478px) {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+  }
 `;
 
 export default class NextJsCarousel extends Component {
   render() {
     return (
       <div className="h-full  relative">
-        <Carousel showThumbs={false}>
+        <Carousel showThumbs={false} showArrows={true}>
           {/* The Team */}
           <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
