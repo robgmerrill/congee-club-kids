@@ -80,23 +80,6 @@ export default class NextJsCarousel extends Component {
               publishing children’s books for the AAPI community
             </p>
           </div>
-          {/* Marissa Merrill */}
-          <div className="bg-purple-300 h-full w-full  top-0 bottom-0 flex flex-col items-center">
-            {/* slanted text */}
-            <Header>Marissa - Author</Header>
-            {/* paragraph */}
-            <StyledCard>
-              <figure className="p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
-                <Image
-                  className="w-24 h-24  rounded-full mx-auto"
-                  src={MarProfile}
-                  alt=""
-                  width="360"
-                  height="360"
-                />
-              </figure>
-            </StyledCard>
-          </div>
           {/* Sara Menges */}
           <div className="bg-yellow-300 h-full w-full  top-0 bottom-0 flex flex-col items-center">
             {/* slanted text */}
@@ -107,6 +90,23 @@ export default class NextJsCarousel extends Component {
                 <Image
                   className="w-24 h-24  rounded-full mx-auto"
                   src={SaraProfile}
+                  alt=""
+                  width="360"
+                  height="360"
+                />
+              </figure>
+            </StyledCard>
+          </div>
+          {/* Marissa Merrill */}
+          <div className="bg-purple-300 h-full w-full  top-0 bottom-0 flex flex-col items-center">
+            {/* slanted text */}
+            <Header>Marissa - Author</Header>
+            {/* paragraph */}
+            <StyledCard>
+              <figure className="p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
+                <Image
+                  className="w-24 h-24  rounded-full mx-auto"
+                  src={MarProfile}
                   alt=""
                   width="360"
                   height="360"
