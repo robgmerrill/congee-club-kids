@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 import MarProfile from "./mar-profile.jpg";
+import SaraProfile from "./congee-sara.jpg";
 import Image from "next/image";
 
 const StyledCard = styled.div`
@@ -105,7 +106,7 @@ export default class NextJsCarousel extends Component {
               <figure className=" bg-yellow-300 rounded-xl p-8   rounded-3xl mx-8 md:mx-0 mb-8 md:mb-0">
                 <Image
                   className="w-24 h-24  rounded-full mx-auto"
-                  src={MarProfile}
+                  src={SaraProfile}
                   alt=""
                   width="360"
                   height="360"
