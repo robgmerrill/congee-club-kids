@@ -132,6 +132,7 @@ export default function ContactForm() {
         </button>
 
         <ValidationError errors={state.errors} />
+        <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
       </form>
     </div>
   );
