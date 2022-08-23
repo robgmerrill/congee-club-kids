@@ -16,6 +16,9 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xknengrp");
 
   const emailRef = useRef();
+  const nameRef = useRef();
+  const messageRef = useRef();
+  console.log(emailRef);
   const refAnimationInstance = useRef(null);
 
   const getInstance = useCallback((instance) => {
@@ -32,32 +35,42 @@ export default function ContactForm() {
   }, []);
 
   const fire = useCallback(() => {
-    makeShot(0.25, {
-      spread: 26,
-      startVelocity: 55,
-    });
+    if (
+      emailRef.current.value.length > 0 &&
+      nameRef.current.value.length > 0 &&
+      messageRef.current.value.length > 0
+    ) {
+      makeShot(0.25, {
+        spread: 26,
+        startVelocity: 55,
+      });
 
-    makeShot(0.2, {
-      spread: 60,
-    });
+      makeShot(0.2, {
+        spread: 60,
+      });
 
-    makeShot(0.35, {
-      spread: 100,
-      decay: 0.91,
-      scalar: 0.8,
-    });
+      makeShot(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8,
+      });
 
-    makeShot(0.1, {
-      spread: 120,
-      startVelocity: 25,
-      decay: 0.92,
-      scalar: 1.2,
-    });
+      makeShot(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2,
+      });
 
-    makeShot(0.1, {
-      spread: 120,
-      startVelocity: 45,
-    });
+      makeShot(0.1, {
+        spread: 120,
+        startVelocity: 45,
+      });
+      emailRef.current.value = "";
+      nameRef.current.value = "";
+      messageRef.current.value = "";
+    }
+    console.log("yo yo yo");
   }, [makeShot]);
 
   useEffect(() => {
@@ -65,9 +78,14 @@ export default function ContactForm() {
     emailRef.current.focus();
   }, []);
 
-  if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
-  }
+  // if (state.succeeded) {
+  //   return (
+  //     <>
+  //       <p>Thanks for your submission!</p>
+  //       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
+  //     </>
+  //   );
+  // }
 
   // if (state.succeeded) {
   //   fire();
@@ -98,6 +116,7 @@ export default function ContactForm() {
             Name:
           </label>
           <input
+            ref={nameRef}
             id="name"
             type="name"
             name="name"
@@ -110,6 +129,7 @@ export default function ContactForm() {
         <div>
           <label className="block">Message:</label>
           <textarea
+            ref={messageRef}
             id="message"
             rows="6"
             name="message"
@@ -131,7 +151,7 @@ export default function ContactForm() {
           Submit
         </button>
 
-        <ValidationError errors={state.errors} />
+        {/* <ValidationError errors={state.errors} /> */}
         <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
       </form>
     </div>
