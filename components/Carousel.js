@@ -64,7 +64,10 @@ export default class NextJsCarousel extends Component {
           infiniteLoop={true}
         >
           {/* The Team */}
-          <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
+          <div
+            className="h-full  top-0 bottom-0 flex flex-col items-center"
+            style={{ backgroundColor: "#97FFE5" }}
+          >
             {/* slanted text */}
             <Header>The Team</Header>
             {/* paragraph */}

@@ -59,13 +59,6 @@ export default function Navbar() {
                 </a>
               </button>
             </Link>
-            <Link href="/contact">
-              <button onClick={handleClick}>
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
-                  Contact
-                </a>
-              </button>
-            </Link>
             <Link href="/about">
               <button onClick={handleClick}>
                 <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
@@ -73,11 +66,19 @@ export default function Navbar() {
                 </a>
               </button>
             </Link>
-            <Link href="https://congee-club-kids.myshopify.com/">
+            <Link href="/contact">
+              <button onClick={handleClick}>
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
+                  Contact
+                </a>
+              </button>
+            </Link>
+
+            {/* <Link href="https://congee-club-kids.myshopify.com/">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
                 Store
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
