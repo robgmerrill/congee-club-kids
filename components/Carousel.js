@@ -61,6 +61,7 @@ export default class NextJsCarousel extends Component {
           showArrows={true}
           showIndicators={false}
           showStatus={false}
+          infiniteLoop={true}
         >
           {/* The Team */}
           <div className="bg-green-400 h-full  top-0 bottom-0 flex flex-col items-center">
