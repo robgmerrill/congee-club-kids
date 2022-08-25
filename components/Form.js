@@ -94,7 +94,7 @@ export default function ContactForm() {
   return (
     <div
       className="bg-white p-4 rounded-lg shadow-lg h-84"
-      style={{ width: "400px" }}
+      style={{ width: "400px", fontFamily: "Andika" }}
     >
       <form onSubmit={handleSubmit} className="flex flex-col">
         <div>

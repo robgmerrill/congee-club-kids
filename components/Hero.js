@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import steamer from "./dim-sum-steamer.png";
+import kickstarter from "./Kickstarter.png";
 import Image from "next/image";
 
 export default function Hero() {
