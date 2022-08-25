@@ -69,7 +69,7 @@ export default class NextJsCarousel extends Component {
             <Header>The Team</Header>
             {/* paragraph */}
             <p
-              className="text-xl md:text-2xl w-4/5"
+              className="text-lg md:text-2xl w-4/5"
               style={{ fontFamily: "Andika" }}
             >
               Sara Menges and Marissa Merrill met in college and instantly
@@ -125,7 +125,10 @@ export default class NextJsCarousel extends Component {
             {/* slanted text */}
             <Header>The Mission</Header>
             {/* paragraph */}
-            <p className="text-2xl w-4/5" style={{ fontFamily: "Andika" }}>
+            <p
+              className="text-lg md:text-2xl w-4/5"
+              style={{ fontFamily: "Andika" }}
+            >
               Congee Club Kids creates children’s books that illuminate AAPI
               experience and celebrate AAPI culture in a kid friendly, fun and
               creative way.
@@ -136,7 +139,10 @@ export default class NextJsCarousel extends Component {
             {/* slanted text */}
             <Header>The Vision</Header>
             {/* paragraph */}
-            <p className="text-2xl w-4/5" style={{ fontFamily: "Andika" }}>
+            <p
+              className="text-lg md:text-2xl w-4/5"
+              style={{ fontFamily: "Andika" }}
+            >
               Our vision is to help kids see themselves, their traditions and
               their cultures reflected in literature so that they can grow
               confident in their heritage and customs...Our vision is to help
