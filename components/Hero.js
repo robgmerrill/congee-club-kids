@@ -14,8 +14,12 @@ export default function Hero() {
       >
         <div className="md:w-1/2">
           <div className="flex justify-center items-center flex-col text-6xl md:text-9xl text-white">
-            <h2>Congee</h2>
-            <p>Club Kids</p>
+            <h2 style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
+              Congee
+            </h2>
+            <p style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
+              Club Kids
+            </p>
           </div>
           <div className="text-2xl md:text-4xl flex justify-center">
             <motion.button
