@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import steamer from "./dim-sum-steamer.png";
+import HeroImage from "./hero-image.png";
 import kickstarter from "./Kickstarter.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,11 +31,35 @@ export default function Hero() {
 
         <div className="md:w-1/2 flex justify-center items-center">
           <Image
-            src={steamer}
+            src={HeroImage}
             height="350px"
             width="350px"
             alt="steamer basket"
           />
+        </div>
+      </div>
+      <div
+        className="bg-white h-96 flex justify-center items-center "
+        style={{ boxShadow: "inset 0 0 5px gray" }}
+      >
+        <div
+          className="px-4 md:px-0 md:text-center md:w-4/5"
+          style={{ fontFamily: "Andika" }}
+        >
+          Welcome! We’re Congee Club Kids, a brand that celebrates AAPI culture
+          through its publication of children’s books! Thank you for being here.
+          More information about our first book launch will be coming soon. For
+          now, follow us on{" "}
+          <span className="underline">
+            <Link href="https://www.instagram.com/congeeclubkids/">
+              Instagram
+            </Link>
+          </span>{" "}
+          or{" "}
+          <span className="underline">
+            <Link href="https://www.facebook.com/congeeclubkids">Facebook</Link>
+          </span>{" "}
+          updates! and sign up for our newsletter for more
         </div>
       </div>
     </>
