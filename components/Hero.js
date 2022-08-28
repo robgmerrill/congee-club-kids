@@ -13,7 +13,7 @@ export default function Hero() {
         style={{ backgroundColor: "#97FFE5", height: "calc(100vh - 100px)" }}
       >
         <div className="md:w-1/2">
-          <div className="flex justify-center items-center flex-col text-6xl md:text-9xl">
+          <div className="flex justify-center items-center flex-col text-6xl md:text-9xl text-white">
             <h2>Congee</h2>
             <p>Club Kids</p>
           </div>
