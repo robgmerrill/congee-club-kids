@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="md:w-1/2 flex justify-center items-center">
+        <div className="md:w-1/2 flex justify-center items-center pt-12 md:p-0">
           <Image
             src={HeroImage}
             height="350px"
