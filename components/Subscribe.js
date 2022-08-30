@@ -119,7 +119,7 @@ function Subscribe() {
       <h4 className="sub-header">Subscribe to the newsletter</h4>
       <p className="sub-text">
         Get to notified on quality articles about frontend development and more
-        sent to your inbox. I'll send you an email once a month, no spam.
+        sent to your inbox. I will send you an email once a month, no spam.
       </p>
       <form onSubmit={subscribe}>
         <SubFormContainer>
@@ -149,7 +149,7 @@ function Subscribe() {
           <ErrorState className="error-state">{errorMsg}</ErrorState>
         )}
         {state === "Success" && (
-          <SuccessState>Awesome, you've been subscribed!</SuccessState>
+          <SuccessState>Awesome, you have been subscribed!</SuccessState>
         )}
       </form>
     </SubscribeContainer>
