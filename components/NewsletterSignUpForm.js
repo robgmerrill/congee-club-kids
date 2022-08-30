@@ -23,6 +23,7 @@ export default function NewsLetterSignUpForm() {
   };
 
   const SubscribeContainer = styled.div`
+    padding: 16px 0;
     font-family: "Andika";
     margin: 20px 0px;
     padding: 24px;
