@@ -6,6 +6,7 @@ import Image from "next/image";
 import Squiggle from "./squiggle.png";
 import Link from "next/link";
 import Subscribe from "./Subscribe";
+import NewsLetterSignUpForm from "./NewsletterSignUpForm";
 
 export default function Hero() {
   return (
@@ -41,6 +42,7 @@ export default function Hero() {
               </div>
             </div> */}
             <Subscribe />
+            <NewsLetterSignUpForm />
           </div>
         </div>
 
