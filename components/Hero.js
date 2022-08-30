@@ -3,7 +3,9 @@ import steamer from "./dim-sum-steamer.png";
 import HeroImage from "./hero-image.png";
 import kickstarter from "./Kickstarter.png";
 import Image from "next/image";
+import Squiggle from "./squiggle.png";
 import Link from "next/link";
+import Subscribe from "./Subscribe";
 
 export default function Hero() {
   return (
@@ -21,15 +23,24 @@ export default function Hero() {
               Club Kids
             </p>
           </div>
-          <div className="text-2xl md:text-4xl flex justify-center">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="rounded-3xl  p-4 w-64"
-              style={{ backgroundColor: "#EBE152" }}
-            >
-              Button
-            </motion.button>
+          {/* BUtton Container */}
+          <div className="border-8 flex justify-center items-center">
+            {/* <div>
+              <div>Sign up for email updates</div>
+              <label>name: </label>
+              <input></input>
+              <label>email: </label>
+              <input></input>
+              <div className="text-2xl md:text-4xl flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <img src={Squiggle.src} />
+                </motion.button>
+              </div>
+            </div> */}
+            <Subscribe />
           </div>
         </div>
 
