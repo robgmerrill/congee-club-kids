@@ -144,7 +144,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          onClick={fire}
+          // onClick={fire}
           disabled={state.submitting}
           className="bg-yellow-300 rounded-lg mt-4"
         >
@@ -152,7 +152,7 @@ export default function ContactForm() {
         </button>
 
         {/* <ValidationError errors={state.errors} /> */}
-        <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
+        {/* <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} /> */}
       </form>
     </div>
   );
