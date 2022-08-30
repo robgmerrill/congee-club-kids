@@ -16,7 +16,7 @@ export default function Hero() {
         style={{ backgroundColor: "#97FFE5", height: "calc(100vh - 100px)" }}
       >
         <div className="md:w-1/2">
-          <div className="flex justify-center items-center flex-col text-6xl md:text-9xl text-white">
+          <div className="flex  justify-center items-center flex-col text-6xl md:text-9xl text-white ">
             <h2 style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
               Congee
             </h2>
@@ -25,7 +25,7 @@ export default function Hero() {
             </p>
           </div>
           {/* BUtton Container */}
-          <div className="border-8 flex justify-center items-center">
+          <div className="flex justify-center items-center">
             {/* <div>
               <div>Sign up for email updates</div>
               <label>name: </label>
@@ -41,7 +41,6 @@ export default function Hero() {
                 </motion.button>
               </div>
             </div> */}
-            <Subscribe />
             <NewsLetterSignUpForm />
           </div>
         </div>
