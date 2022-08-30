@@ -25,9 +25,9 @@ export default function Hero() {
             </p>
           </div>
           {/* BUtton Container */}
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <NewsLetterSignUpForm />
-          </div>
+          </div> */}
         </div>
 
         <div className="w-full flex justify-center items-center pt-12 md:p-0">
