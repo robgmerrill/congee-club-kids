@@ -15,7 +15,7 @@ export default function Hero() {
         className="flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#97FFE5", height: "calc(100vh - 100px)" }}
       >
-        <div className="md:w-1/2">
+        <div className="w-full px-4 lg:px-0">
           <div className="flex  justify-center items-center flex-col text-6xl md:text-9xl text-white ">
             <h2 style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
               Congee
@@ -26,26 +26,11 @@ export default function Hero() {
           </div>
           {/* BUtton Container */}
           <div className="flex justify-center items-center">
-            {/* <div>
-              <div>Sign up for email updates</div>
-              <label>name: </label>
-              <input></input>
-              <label>email: </label>
-              <input></input>
-              <div className="text-2xl md:text-4xl flex justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <img src={Squiggle.src} />
-                </motion.button>
-              </div>
-            </div> */}
             <NewsLetterSignUpForm />
           </div>
         </div>
 
-        <div className="md:w-1/2 flex justify-center items-center pt-12 md:p-0">
+        <div className="w-full flex justify-center items-center pt-12 md:p-0">
           <Image
             src={HeroImage}
             height="350px"
