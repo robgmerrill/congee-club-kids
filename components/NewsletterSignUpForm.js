@@ -101,7 +101,7 @@ export default function NewsLetterSignUpForm() {
 
   return (
     <div
-      className="rounded-lg overflow-hidden p-4 w-full md:w-4/5 max-w-xl bg-white shadow-md"
+      className="rounded-lg overflow-hidden p-4 w-full md:w-4/5 max-w-xl bg-white shadow-md mt-12 md:mt-0"
       style={{ fontFamily: "Andika" }}
     >
       <h4 className="sub-header">Subscribe to the newsletter</h4>
