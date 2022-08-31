@@ -40,43 +40,23 @@ export default function ContactForm() {
       nameRef.current.value.length > 0 &&
       messageRef.current.value.length > 0
     ) {
-      makeShot(0.25, {
-        spread: 26,
-        startVelocity: 55,
-      });
-
-      makeShot(0.2, {
-        spread: 60,
-      });
-
-      makeShot(0.35, {
-        spread: 100,
-        decay: 0.91,
-        scalar: 0.8,
-      });
-
-      makeShot(0.1, {
-        spread: 120,
-        startVelocity: 25,
-        decay: 0.92,
-        scalar: 1.2,
-      });
-
-      makeShot(0.1, {
-        spread: 120,
-        startVelocity: 45,
-      });
       emailRef.current.value = "";
       nameRef.current.value = "";
       messageRef.current.value = "";
     }
     console.log("yo yo yo");
-  }, [makeShot]);
+  });
 
   useEffect(() => {
     console.log(emailRef.current);
     emailRef.current.focus();
   }, []);
+
+  const clearForm = () => {
+    emailRef.current.value = "";
+    nameRef.current.value = "";
+    messageRef.current.value = "";
+  };
 
   // if (state.succeeded) {
   //   return (
@@ -144,7 +124,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          // onClick={fire}
+          // onClick={clearForm}
           disabled={state.submitting}
           className="bg-yellow-300 rounded-lg mt-4"
         >
