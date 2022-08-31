@@ -13,10 +13,10 @@ export default function Hero() {
     <>
       <div
         className="flex justify-center items-center flex-col md:flex-row"
-        style={{ backgroundColor: "#97FFE5", height: "calc(100vh - 100px)" }}
+        style={{ backgroundColor: "#97FFE5" }}
       >
-        <div className="w-full px-4 lg:px-0">
-          <div className="flex  justify-center items-center flex-col text-6xl md:text-9xl text-white ">
+        <div className="w-full px-4 lg:px-0 pt-16 md:pt-0">
+          <div className="flex  justify-center items-center flex-col text-8xl md:text-9xl text-white ">
             <h2 style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
               Congee
             </h2>
@@ -25,12 +25,12 @@ export default function Hero() {
             </p>
           </div>
           {/* BUtton Container */}
-          {/* <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center md:pb-24 md:pt-12">
             <NewsLetterSignUpForm />
-          </div> */}
+          </div>
         </div>
 
-        <div className="w-full flex justify-center items-center pt-12 md:p-0">
+        <div className="w-full flex justify-center items-center pt-12 md:p-0 pb-24 md:pb-0">
           <Image
             src={HeroImage}
             height="350px"
@@ -60,7 +60,7 @@ export default function Hero() {
           <span className="underline">
             <Link href="https://www.facebook.com/congeeclubkids">Facebook</Link>
           </span>{" "}
-          updates! and sign up for our newsletter for more
+          and sign up for our newsletter for updates!
         </div>
       </div>
     </>
