@@ -1,16 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 
 import { useRef, useEffect, useCallback } from "react";
-import ReactCanvasConfetti from "react-canvas-confetti";
-
-const canvasStyles = {
-  position: "fixed",
-  pointerEvents: "none",
-  width: "100%",
-  height: "100%",
-  top: 0,
-  left: 0,
-};
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xknengrp");
@@ -19,38 +9,11 @@ export default function ContactForm() {
   const nameRef = useRef();
   const messageRef = useRef();
   console.log(emailRef);
-  const refAnimationInstance = useRef(null);
 
-  const getInstance = useCallback((instance) => {
-    refAnimationInstance.current = instance;
-  }, []);
-
-  const makeShot = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current &&
-      refAnimationInstance.current({
-        ...opts,
-        origin: { y: 0.7 },
-        particleCount: Math.floor(200 * particleRatio),
-      });
-  }, []);
-
-  const fire = useCallback(() => {
-    if (
-      emailRef.current.value.length > 0 &&
-      nameRef.current.value.length > 0 &&
-      messageRef.current.value.length > 0
-    ) {
-      emailRef.current.value = "";
-      nameRef.current.value = "";
-      messageRef.current.value = "";
-    }
-    console.log("yo yo yo");
-  });
-
-  useEffect(() => {
-    console.log(emailRef.current);
-    emailRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   console.log(emailRef.current);
+  //   emailRef.current.focus();
+  // }, []);
 
   const clearForm = () => {
     emailRef.current.value = "";
@@ -70,6 +33,10 @@ export default function ContactForm() {
   // if (state.succeeded) {
   //   fire();
   // }
+
+  if (state.succeeded) {
+    return <p>Thanks for your submission!</p>;
+  }
 
   return (
     <div
@@ -131,7 +98,7 @@ export default function ContactForm() {
           Submit
         </button>
 
-        {/* <ValidationError errors={state.errors} /> */}
+        <ValidationError errors={state.errors} />
         {/* <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} /> */}
       </form>
     </div>
