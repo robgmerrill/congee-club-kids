@@ -1,4 +1,5 @@
 import { RiFacebookCircleLine, RiInstagramLine } from "react-icons/ri";
+import Link from "next/link";
 
 export default function Footer() {
   const date = new Date();
@@ -8,8 +9,12 @@ export default function Footer() {
         &copy; {date.getYear() + 1900} Congee Club Kids
       </div>
 
-      <RiFacebookCircleLine size={40} color="#4267B2"></RiFacebookCircleLine>
-      <RiInstagramLine size={40} color="#8a3ab9"></RiInstagramLine>
+      <Link href="https://www.instagram.com/congeeclubkids/">
+        <RiFacebookCircleLine size={40} color="#4267B2"></RiFacebookCircleLine>
+      </Link>
+      <Link href="https://www.facebook.com/congeeclubkids">
+        <RiInstagramLine size={40} color="#8a3ab9"></RiInstagramLine>
+      </Link>
     </div>
   );
 }

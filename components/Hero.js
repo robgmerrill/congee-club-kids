@@ -7,6 +7,31 @@ import Squiggle from "./squiggle.png";
 import Link from "next/link";
 import Subscribe from "./Subscribe";
 import NewsLetterSignUpForm from "./NewsletterSignUpForm";
+import styled from "styled-components";
+
+const LinkWrapper = styled.span`
+  /* font-size: 64px; */
+  /* .hover-3 { */
+  font-weight: bold;
+  --b: 0.1em; /* the thickness of the line */
+  --c: #8a3ab9; /* the color */
+
+  color: #0000;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #000 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+  /* } */
+  :hover {
+    --_p: 100%;
+    --_s: 0.3s;
+  }
+`;
 
 export default function Hero() {
   return (
@@ -52,13 +77,19 @@ export default function Hero() {
           More information about our first book launch will be coming soon. For
           now, follow us on{" "}
           <span className="underline">
-            <Link href="https://www.instagram.com/congeeclubkids/">
-              Instagram
-            </Link>
+            <LinkWrapper>
+              <Link href="https://www.instagram.com/congeeclubkids/">
+                Instagram
+              </Link>
+            </LinkWrapper>
           </span>{" "}
           or{" "}
           <span className="underline">
-            <Link href="https://www.facebook.com/congeeclubkids">Facebook</Link>
+            <LinkWrapper>
+              <Link href="https://www.facebook.com/congeeclubkids">
+                Facebook
+              </Link>
+            </LinkWrapper>
           </span>{" "}
           and sign up for our newsletter for updates!
         </div>
