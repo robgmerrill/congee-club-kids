@@ -10,12 +10,13 @@ import {
   useBlog,
 } from "../contexts/blog-context";
 import RecentPosts from "../components/blog/RecentPosts";
+import FilterContainer from "../components/blog/FilterContainer";
 
 const blogTitle = "Blog";
 const description = "Welcome to the Congee Club Kids Blog. Join us.";
 
 function Blog({ featured, items, tags, total }) {
-  console.log({ featured, items, tags, total });
+  console.log("here", { featured, items, tags, total });
   const { setFeatured, setData, setTags } = useBlog();
 
   useEffect(() => {
@@ -32,7 +33,7 @@ function Blog({ featured, items, tags, total }) {
         className="md:grid gap-4  max-w-5xl sm:mb-6 md:mb-12 mx-auto pb-7 px-4"
         style={{ gridTemplateColumns: "1fr 2fr" }}
       >
-        <div className="border-2">Filter Container</div>
+        <FilterContainer />
         <RecentPosts />
       </div>
     </div>
