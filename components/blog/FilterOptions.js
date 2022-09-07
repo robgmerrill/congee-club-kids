@@ -47,20 +47,27 @@ export default function FilterButton({ filterItems, type }) {
   };
 
   return (
-    <div backgroundColor="neutral.0" pt={[0, 0, 40]} px={700}>
+    <div
+      backgroundColor="neutral.0"
+      //   pt={[0, 0, 40]}
+      //   px={700}
+      className="md:pt-10 px-8"
+    >
       <div
-        alignItems="center"
-        display="flex"
-        justifyContent="space-between"
-        mb={500}
+        // alignItems="center"
+        // display="flex"
+        // justifyContent="space-between"
+        // mb={500}
+        className="flex justify-between items-center mb-5"
       >
         <div>
           {type === "tag" ? (
             <span
               as="span"
               color="midnight.1000"
-              marginBottom={21}
+              //   marginBottom={21}
               typeScale={[500, 500, 100]}
+              className="mb-5"
             >
               Tags
             </span>
@@ -68,8 +75,9 @@ export default function FilterButton({ filterItems, type }) {
             <span
               as="span"
               color="midnight.1000"
-              marginBottom={21}
+              //   marginBottom={21}
               typeScale={[500, 500, 100]}
+              className="mb-5"
             >
               Topics
             </span>
@@ -82,14 +90,20 @@ export default function FilterButton({ filterItems, type }) {
         </ClearButtonWrapper>
       </div>
       <div
-        display="flex"
-        flexWrap="wrap"
+        // display="flex"
+        // flexWrap="wrap"
         marginBottom={type === "topic" ? 700 : 0}
+        className="flex flex-wrap"
       >
         {filterItems
           .slice(0, type === "topic" ? 9 : tagsCount)
           .map((filterItem, index) => (
-            <div key={index} marginBottom={[300, 300, 500]} marginRight={14}>
+            <div
+              key={index}
+              marginBottom={[300, 300, 500]}
+              marginRight={14}
+              className="mb-4 mr-4"
+            >
               {isSelectedFilter(filterItem.sys.id) && (
                 <button
                   appearance="primary-outline"

@@ -10,7 +10,7 @@ const FilterButtonWrapper = styled.button`
   height: 40px;
   padding: 6px 20px;
   border: none;
-  background-color: aqua;
+  background-color: #97ffe5;
   border-radius: 16px;
   color: black;
   font-size: 16px;
