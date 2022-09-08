@@ -134,7 +134,7 @@ export default function FeaturedArticle() {
                 <div
                   //   fontSize={[400, 400, 500, 700]}
                   //   mr={12}
-                  className="mr-3 text-2xl"
+                  className="text-lg md:text-xl lg:text-2xl px-4 py-2 rounded-xl bg-yellow-300 text-white"
                 >
                   Read the article
                 </div>
