@@ -29,11 +29,12 @@ const ExcerptLineClampWrap = styled.div`
 `;
 
 export default function Post({ post }) {
-  const { coverImage, excerpt, title, slug, authorBio } = post.fields;
-  //   if (!authorBio) return null;
-  //   const { firstName, lastName } = authorBio.fields;
+  const { coverImage, excerpt, title, slug, author } = post.fields;
+  if (!author) return null;
+  const { firstName, lastName } = author.fields;
+  //   console.log({ firstName, lastName });
   const { tags } = post.metadata;
-  console.log("posts component", post);
+  console.log("posts component here", post);
 
   let topic = "";
   tags.map((topicSelection) => {
@@ -114,9 +115,9 @@ export default function Post({ post }) {
           >
             <div color="midnight.800" mb={300}>
               <div typeScale={100}>
-                <span as="span">
-                  {/* {firstName.toUpperCase()} {lastName.toUpperCase()} */}
-                  Marissa Merrill
+                <span as="span" className="text-gray-500">
+                  {firstName.toUpperCase()} {lastName.toUpperCase()}
+                  {/* Marissa Merrill */}
                 </span>
               </div>
             </div>
@@ -128,7 +129,12 @@ export default function Post({ post }) {
               </TitleLineClampWrap>
             </div>
             <div>
-              <div color="midnight.800" fontFamily="Inter" typeScale={400}>
+              <div
+                color="midnight.800"
+                fontFamily="Inter"
+                typeScale={400}
+                className="text-gray-500"
+              >
                 <ExcerptLineClampWrap>{excerpt}</ExcerptLineClampWrap>
               </div>
             </div>

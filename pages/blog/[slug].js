@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 import safeJsonStringify from "safe-json-stringify";
 import BlogHeader from "../../components/blog/detail/BlogHeader";
 import BlogContent from "../../components/blog/detail/BlogContent";
+import BlogAuthorBio from "../../components/blog/detail/BlogAuthorBio";
 // import Metadata from 'components/global/Metadata';
 // import { SectionIndicatorLeft, SectionIndicatorRight } from 'components/global/Section';
 // import BlogAuthorBio from 'components/pages/resources/detail/BlogAuthorBio';
@@ -31,7 +32,7 @@ export default function PostPage({ post, postTags }) {
           <BlogHeader post={post} />
           <BlogContent bodyContent={post.fields.bodyContent} />
           {/* <BlogTags tags={postTags} twitterShareLink={post.fields.slug} twitterShareTitle={post.fields.title} /> */}
-          {/* <BlogAuthorBio author={post.fields.authorBio} /> */}
+          {/* <BlogAuthorBio author={post.fields.author} /> */}
           {/* <RelatedArticle relatedArticle={post.fields.relatedArticle} /> */}
         </div>
       </div>
