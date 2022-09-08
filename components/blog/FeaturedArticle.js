@@ -99,8 +99,8 @@ export default function FeaturedArticle() {
           </div>
           <div mb={40} className="mb-10">
             <div
-              fontFamily="Inter"
-              typeScale={[600, 600, 1100]}
+              //   fontFamily="Inter"
+              //   typeScale={[600, 600, 1100]}
               className="text-black text-2xl"
             >
               <ExcerptLineClampWrap>{excerpt}</ExcerptLineClampWrap>
@@ -118,7 +118,7 @@ export default function FeaturedArticle() {
                 <div
                   fontSize={[400, 400, 500, 700]}
                   mr={6}
-                  className="text-lg md:text-xl lg:text-2xl"
+                  className="text-lg md:text-xl lg:text-2xl px-6 py-3 rounded-xl bg-yellow-300 "
                 >
                   Read the article
                 </div>

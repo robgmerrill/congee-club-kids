@@ -12,6 +12,7 @@ import { useBlog } from "../../contexts/blog-context";
 import FilterOptions from "./FilterOptions";
 
 const FilterWrapper = styled.div`
+  /* background-color: rgb(151, 255, 229); */
   .show {
     position: fixed;
     z-index: 100;

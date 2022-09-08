@@ -67,7 +67,7 @@ export default function FilterButton({ filterItems, type }) {
               color="midnight.1000"
               //   marginBottom={21}
               typeScale={[500, 500, 100]}
-              className="mb-5"
+              className="mb-5 text-lg"
             >
               Tags
             </span>
@@ -77,14 +77,19 @@ export default function FilterButton({ filterItems, type }) {
               color="midnight.1000"
               //   marginBottom={21}
               typeScale={[500, 500, 100]}
-              className="mb-5"
+              className="mb-5 text-lg"
             >
               Topics
             </span>
           )}
         </div>
         <ClearButtonWrapper onClick={handleFilterReset}>
-          <span as="span" color="royal.80" fontSize={100}>
+          <span
+            as="span"
+            color="royal.80"
+            fontSize={100}
+            className="text-sm text-gray-500"
+          >
             (Clear)
           </span>
         </ClearButtonWrapper>
@@ -106,9 +111,14 @@ export default function FilterButton({ filterItems, type }) {
             >
               {isSelectedFilter(filterItem.sys.id) && (
                 <button
-                  appearance="primary-outline"
+                  //   appearance="primary-outline"
                   onClick={() => filterPosts(filterItem.sys.id)}
                   size="tiny"
+                  className="px-2 py-4 rounded-lg"
+                  style={{
+                    border: "2px solid rgb(151, 255, 229)",
+                    color: "rgb(151, 255, 229)",
+                  }}
                 >
                   {type === "tag"
                     ? `#${filterItem.name.slice(5)}`
@@ -120,6 +130,11 @@ export default function FilterButton({ filterItems, type }) {
                   appearance="primary"
                   onClick={() => filterPosts(filterItem.sys.id)}
                   size="tiny"
+                  className="px-2 py-4 rounded-lg text-white"
+                  style={{
+                    backgroundColor: "rgb(151, 255, 229)",
+                    border: "2px solid rgb(151, 255, 229)",
+                  }}
                 >
                   {type === "tag"
                     ? `#${filterItem.name.slice(5)}`
