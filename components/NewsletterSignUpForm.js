@@ -104,8 +104,11 @@ export default function NewsLetterSignUpForm() {
       className="rounded-lg overflow-hidden p-4 w-full md:w-4/5 max-w-xl bg-white shadow-md mt-12 md:mt-0"
       style={{ fontFamily: "Andika" }}
     >
-      <h4 className="sub-header">Subscribe to the newsletter</h4>
-      <p className="sub-text">Keep up to date...</p>
+      <h4 className="sub-header text-2xl mb-2">Stay in the loop</h4>
+      <p className="sub-text text-gray-600">
+        Get the best updates and articles from Congee Club Kids delivered to
+        your inbox. Unsubscribe at any time.
+      </p>
       <div className="pt-4">
         <form onSubmit={subscribeUser}>
           {/* <label htmlFor="email-input" className="form__label">

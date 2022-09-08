@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function BlogHeader({ post }) {
   console.log("blog header post", post);
-  const { title, authorBio, coverImage } = post.fields;
-  console.log({ title, authorBio, coverImage });
+  const { title, author, coverImage } = post.fields;
+  console.log({ title, author, coverImage });
 
   return (
     <div className="bg-white" style={{ fontFamily: "Andika" }}>
@@ -37,9 +37,8 @@ export default function BlogHeader({ post }) {
       >
         <div fontSize={300}>
           <div as="span">
-            {/* {authorBio.fields.firstName.toUpperCase()}{" "}
-            {authorBio.fields.lastName.toUpperCase()} */}
-            Marissa Merrill
+            {author.fields.firstName.toUpperCase()}{" "}
+            {author.fields.lastName.toUpperCase()}
           </div>
         </div>
       </div>

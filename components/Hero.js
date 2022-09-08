@@ -42,10 +42,26 @@ export default function Hero() {
       >
         <div className="w-full px-4 lg:px-0 pt-16 md:pt-0">
           <div className="flex  justify-center items-center flex-col text-8xl md:text-9xl text-white ">
-            <h2 style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
+            <h2
+              style={{
+                textShadow: "2px 4px 3px rgba(0,0,0,0.1)",
+                backgroundImage:
+                  "linear-gradient(0deg,transparent 12px,#FDE046 13px,#FDE046 22px,transparent 23px,transparent)",
+              }}
+              // style={{
+              //   backgroundImage:
+              //     "linear-gradient(0deg,transparent 12px,#FDE046 13px,#FDE046 22px,transparent 23px,transparent)",
+              // }}
+            >
               Congee
             </h2>
-            <p style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.3)" }}>
+            <p
+              style={{
+                textShadow: "2px 4px 3px rgba(0,0,0,0.1)",
+                backgroundImage:
+                  "linear-gradient(0deg,transparent 12px,#FDE046 13px,#FDE046 22px,transparent 23px,transparent)",
+              }}
+            >
               Club Kids
             </p>
           </div>
