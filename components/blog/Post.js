@@ -58,7 +58,7 @@ export default function Post({ post }) {
           //   borderRadius="8px"
           //   mb={[600, 0]}
           //   width="100%"
-          className="rounded-2xl  mb-5 sm:mb-0 w-full"
+          className="rounded-2xl  mb-5 sm:mb-0 w-full shadow-xl"
           style={{ backgroundColor: "white" }}
         >
           <div position="relative" className="relative">

@@ -97,8 +97,9 @@ export default function FilterContainer() {
         // marginBottom={30}
         // width="100%"
         className="hidden md:flex justify-between mb-7 w-full"
+        style={{ fontFamily: "Andika" }}
       >
-        <h3 as="h3" color="midnight.1000" typeScale={1100} className="text-xl">
+        <h3 as="h3" color="midnight.1000" typeScale={1100} className="text-3xl">
           Filter Articles
         </h3>
         <div>
@@ -106,7 +107,7 @@ export default function FilterContainer() {
             // as="span"
             // color="midnight.60"
             // typeScale={1100}
-            className="text-xl"
+            className="text-3xl"
           >
             ({data.total})
           </span>
@@ -125,7 +126,7 @@ export default function FilterContainer() {
             setSearchValue(e.target.value);
           }}
           placeholder="Enter keyword..."
-          className="border-2 rounded py-2 px-4"
+          className="rounded-xl py-2 px-4 w-full outline-none"
         />
       </div>
       <div className={`show ${toggleMobileFilter ? "" : "hide"}`}>

@@ -91,7 +91,7 @@ export default function FeaturedArticle() {
             <TitleLineClampWrap>
               <div
                 // typeScale={[1200, 1200, 1300, 1600]}
-                className="text-3xl lg:text-4xl"
+                className="text-3xl lg:text-5xl text-white font-bold"
               >
                 {title}
               </div>
@@ -101,7 +101,7 @@ export default function FeaturedArticle() {
             <div
               //   fontFamily="Inter"
               //   typeScale={[600, 600, 1100]}
-              className="text-black text-2xl"
+              className="text-white text-2xl"
             >
               <ExcerptLineClampWrap>{excerpt}</ExcerptLineClampWrap>
             </div>
@@ -114,11 +114,11 @@ export default function FeaturedArticle() {
               display={["block", "block", "block", "none"]}
               className="lg:hidden"
             >
-              <button appearance="secondary" size="small">
+              <button>
                 <div
                   fontSize={[400, 400, 500, 700]}
                   mr={6}
-                  className="text-lg md:text-xl lg:text-2xl px-6 py-3 rounded-xl bg-yellow-300 "
+                  className="text-lg md:text-xl lg:text-2xl px-6 py-3 rounded-xl bg-yellow-300 text-white"
                 >
                   Read the article
                 </div>
