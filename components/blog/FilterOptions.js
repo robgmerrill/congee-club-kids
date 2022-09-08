@@ -52,6 +52,10 @@ export default function FilterButton({ filterItems, type }) {
       //   pt={[0, 0, 40]}
       //   px={700}
       className="md:pt-10 px-8"
+      style={{
+        fontFamily: "Andika",
+        textShadow: "2px 2px rgba(0,0,0,0.1)",
+      }}
     >
       <div
         // alignItems="center"

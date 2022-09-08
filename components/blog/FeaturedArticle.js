@@ -92,6 +92,7 @@ export default function FeaturedArticle() {
               <div
                 // typeScale={[1200, 1200, 1300, 1600]}
                 className="text-3xl lg:text-5xl text-white font-bold"
+                style={{ textShadow: "3px 3px rgba(0,0,0,0.1)" }}
               >
                 {title}
               </div>
@@ -102,6 +103,7 @@ export default function FeaturedArticle() {
               //   fontFamily="Inter"
               //   typeScale={[600, 600, 1100]}
               className="text-white text-2xl"
+              style={{ textShadow: "3px 3px rgba(0,0,0,0.1)" }}
             >
               <ExcerptLineClampWrap>{excerpt}</ExcerptLineClampWrap>
             </div>
@@ -119,6 +121,7 @@ export default function FeaturedArticle() {
                   fontSize={[400, 400, 500, 700]}
                   mr={6}
                   className="text-lg md:text-xl lg:text-2xl px-6 py-3 rounded-xl bg-yellow-300 text-white"
+                  style={{ textShadow: "1px 1px rgba(0,0,0,0.1)" }}
                 >
                   Read the article
                 </div>
@@ -135,6 +138,7 @@ export default function FeaturedArticle() {
                   //   fontSize={[400, 400, 500, 700]}
                   //   mr={12}
                   className="text-lg md:text-xl lg:text-2xl px-4 py-2 rounded-xl bg-yellow-300 text-white"
+                  style={{ textShadow: "1px 1px rgba(0,0,0,0.1)" }}
                 >
                   Read the article
                 </div>

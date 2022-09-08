@@ -19,7 +19,7 @@ export default function Hero() {
       </h2>
       <p
         className="text-xl w-4/6 font-bold pt-4"
-        style={{ textShadow: "2px 4px 3px rgba(0,0,0,0.05)" }}
+        style={{ textShadow: "1px 1px rgba(0,0,0,0.1)" }}
       >
         Community update and things such as this. lsjd flsjd flksjdf lksjd
         flksjd flksj dflksd jflsdkjf{" "}
