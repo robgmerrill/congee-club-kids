@@ -59,7 +59,7 @@ export default function Post({ post }) {
           //   mb={[600, 0]}
           //   width="100%"
           className="rounded-2xl  mb-5 sm:mb-0 w-full"
-          style={{ backgroundColor: "rgb(151, 255, 229)" }}
+          style={{ backgroundColor: "white" }}
         >
           <div position="relative" className="relative">
             <div

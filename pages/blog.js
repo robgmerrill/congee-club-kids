@@ -26,7 +26,10 @@ function Blog({ featured, items, tags, total }) {
   }, []);
 
   return (
-    <div className="overflow-hidden" style={{ backgroundColor: "white" }}>
+    <div
+      className="overflow-hidden"
+      style={{ backgroundColor: "rgb(151, 255, 229)" }}
+    >
       <Hero />
       <FeaturedArticle />
       <div

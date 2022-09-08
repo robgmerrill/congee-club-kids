@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useBlog } from "../../contexts/blog-context";
 
 const CircleWrapper = styled.div`
-  background: linear-gradient(to bottom, white 50%, #97ffe5 50%);
+  background: linear-gradient(to bottom, #97ffe5 50%, #ec6139 50%);
   img {
     border-radius: 50%;
   }
   @media (min-width: 768px) {
-    background: linear-gradient(to right, white 50%, #97ffe5 50%);
+    background: linear-gradient(to right, #97ffe5 50%, #ec6139 50%);
   }
 `;
 
@@ -84,7 +84,7 @@ export default function FeaturedArticle() {
         // pr={25}
         // pt={25}
         className="text-black flex flex-col justify-center text-left grow pb-16 md:pb-0 pl-6 lg:pb-24 pr-6 pt-6"
-        style={{ backgroundColor: "#97ffe5" }}
+        style={{ backgroundColor: "#EC6139" }}
       >
         <div maxWidth={631} className="max-w-2xl">
           <div mb={300} className="mb-3">
