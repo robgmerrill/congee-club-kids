@@ -32,23 +32,23 @@ export default function Post({ post }) {
   const { coverImage, excerpt, title, slug, authorBio } = post.fields;
   //   if (!authorBio) return null;
   //   const { firstName, lastName } = authorBio.fields;
-  //   const { tags } = post.metadata;
+  const { tags } = post.metadata;
   console.log("posts component", post);
 
-  // let topic = '';
-  // tags.map((topicSelection) => {
-  // 	if (topicSelection.sys.id.includes('topic')) {
-  // 		topic = topicSelection.sys.id.slice(5);
-  // 	} else {
-  // 		topic = 'Circulo Health';
-  // 	}
-  // });
+  let topic = "";
+  tags.map((topicSelection) => {
+    if (topicSelection.sys.id.includes("topic")) {
+      topic = topicSelection.sys.id.slice(5);
+    } else {
+      topic = "Circulo Health";
+    }
+  });
 
-  // const formattedTopic = topic
-  // 	.match(/([A-Z]?[^A-Z]*)/g)!
-  // 	.slice(0, -1)
-  // 	.join(' ')
-  // 	.toUpperCase();
+  const formattedTopic = topic
+    .match(/([A-Z]?[^A-Z]*)/g)
+    .slice(0, -1)
+    .join(" ")
+    .toUpperCase();
 
   return (
     <LinkWrapper>
@@ -61,7 +61,7 @@ export default function Post({ post }) {
           className="rounded-2xl  mb-5 sm:mb-0 w-full"
           style={{ backgroundColor: "rgb(151, 255, 229)" }}
         >
-          <div position="relative">
+          <div position="relative" className="relative">
             <div
               //   borderTopLeftRadius="8px"
               //   borderTopRightRadius="8px"
@@ -79,7 +79,12 @@ export default function Post({ post }) {
                 />
               )}
             </div>
-            <div left={12} position="absolute" top={400}>
+            <div
+              left={12}
+              position="absolute"
+              top={400}
+              className="absolute left-2 top-2 bg-yellow-300 rounded"
+            >
               <div
                 // alignItems="center"
                 backgroundColor="coral.1000"
@@ -90,14 +95,15 @@ export default function Post({ post }) {
                 // width="100 %"
                 className="flex justify-center items-center w-full"
               >
-                {/* <div
+                <div
                   color="midnight.1000"
                   fontWeight={700}
                   px={6}
                   typeScale={100}
+                  className="text-sm px-2 font-bold"
                 >
                   {formattedTopic}
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

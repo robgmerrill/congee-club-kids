@@ -29,6 +29,7 @@ export default function RecentPosts() {
         display={["flex", "flex", "none"]}
         justifyContent="space-between"
         mb={600}
+        className="flex md:hidden justify-between items-center mb-6"
       >
         <div>
           <span as="span" mr={300} typeScale={600}>
