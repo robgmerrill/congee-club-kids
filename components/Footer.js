@@ -10,10 +10,18 @@ export default function Footer() {
       </div>
 
       <Link href="https://www.facebook.com/congeeclubkids">
-        <RiFacebookCircleLine size={40} color="#4267B2"></RiFacebookCircleLine>
+        <RiFacebookCircleLine
+          size={40}
+          color="#4267B2"
+          style={{ cursor: "pointer" }}
+        ></RiFacebookCircleLine>
       </Link>
       <Link href="https://www.instagram.com/congeeclubkids/">
-        <RiInstagramLine size={40} color="#8a3ab9"></RiInstagramLine>
+        <RiInstagramLine
+          size={40}
+          color="#8a3ab9"
+          style={{ cursor: "pointer" }}
+        ></RiInstagramLine>
       </Link>
     </div>
   );
