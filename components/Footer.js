@@ -9,10 +9,10 @@ export default function Footer() {
         &copy; {date.getYear() + 1900} Congee Club Kids
       </div>
 
-      <Link href="https://www.instagram.com/congeeclubkids/">
+      <Link href="https://www.facebook.com/congeeclubkids">
         <RiFacebookCircleLine size={40} color="#4267B2"></RiFacebookCircleLine>
       </Link>
-      <Link href="https://www.facebook.com/congeeclubkids">
+      <Link href="https://www.instagram.com/congeeclubkids/">
         <RiInstagramLine size={40} color="#8a3ab9"></RiInstagramLine>
       </Link>
     </div>

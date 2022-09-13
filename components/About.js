@@ -102,11 +102,8 @@ export default function About() {
         <div className="text-xl">
           Our vision is to help kids see themselves, their traditions and their
           cultures reflected in literature so that they can grow confident in
-          their heritage and customs...Our vision is to help kids see
-          themselves, their traditions and their cultures reflected in
-          literature so that they can grow confident in their heritage and
-          customs. Through our products, we encourage them to celebrate their
-          diversity and embrace the gift they are to the world.
+          their heritage and customs. Through our products, we encourage them to
+          celebrate their diversity and embrace the gift they are to the world.
         </div>
       </div>
     </AboutWrapper>
