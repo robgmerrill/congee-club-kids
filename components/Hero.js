@@ -8,15 +8,16 @@ import Link from "next/link";
 import Subscribe from "./Subscribe";
 import NewsLetterSignUpForm from "./NewsletterSignUpForm";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const LinkWrapper = styled.span`
-  /* font-size: 64px; */
   /* .hover-3 { */
   font-weight: bold;
   --b: 0.1em; /* the thickness of the line */
   --c: #8a3ab9; /* the color */
 
   color: #0000;
+  cursor: pointer;
   padding-block: var(--b);
   background: linear-gradient(var(--c) 50%, #000 0) 0%
       calc(100% - var(--_p, 0%)) / 100% 200%,
@@ -34,6 +35,9 @@ const LinkWrapper = styled.span`
 `;
 
 export default function Hero() {
+  useEffect(() => {
+    console.log("hello");
+  }, []);
   return (
     <>
       <div
@@ -48,10 +52,6 @@ export default function Hero() {
                 backgroundImage:
                   "linear-gradient(0deg,transparent 12px,#FDE046 13px,#FDE046 22px,transparent 23px,transparent)",
               }}
-              // style={{
-              //   backgroundImage:
-              //     "linear-gradient(0deg,transparent 12px,#FDE046 13px,#FDE046 22px,transparent 23px,transparent)",
-              // }}
             >
               Congee
             </h2>
