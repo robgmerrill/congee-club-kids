@@ -105,6 +105,7 @@ export default function NextJsCarousel() {
         showStatus={false}
         infiniteLoop={true}
         centerMode={width > 478}
+        useKeyboardArrows={true}
         // .control-arrow .control-next
       >
         {/* So Why Congee? */}
