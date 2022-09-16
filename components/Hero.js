@@ -101,11 +101,11 @@ export default function Hero() {
           </span>{" "}
           or{" "}
           <span className="underline">
-            <LinkWrapper>
+            <span className="fancy-link">
               <Link href="https://www.facebook.com/congeeclubkids">
                 Facebook
               </Link>
-            </LinkWrapper>
+            </span>
           </span>{" "}
           and sign up for our newsletter for updates!
         </div>
