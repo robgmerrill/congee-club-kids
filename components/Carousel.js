@@ -107,11 +107,11 @@ export default function NextJsCarousel() {
             Asian culture, because although it is likely thought to have
             originated in China, many Asian cultures have variations of this
             comforting, hearty, warm and homey rice porridge. It felt like a
-            dish that both encompassed the umbrella category of, "Asian," yet
-            left room for diverse expressions and representations. It also is
-            often a good food to feed babies since it's easy to digest and
-            swallow! So that's where we landed on the name{" "}
-            <strong>Congee Club Kids</strong>!
+            dish that both encompassed the umbrella category of,
+            &quot;Asian,&quot; yet left room for diverse expressions and
+            representations. It also is often a good food to feed babies since
+            it&quot;s easy to digest and swallow! So that&quot;s where we landed
+            on the name <strong>Congee Club Kids</strong>!
           </p>
         </div>
         {/* The Team */}
