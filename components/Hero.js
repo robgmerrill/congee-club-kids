@@ -93,7 +93,7 @@ export default function Hero() {
           More information about our first book launch will be coming soon. For
           now, follow us on{" "}
           <span className="underline">
-            <span className="fancy-link">
+            <span className="fancy-link-instagram">
               <Link href="https://www.instagram.com/congeeclubkids/">
                 Instagram
               </Link>
@@ -101,7 +101,7 @@ export default function Hero() {
           </span>{" "}
           or{" "}
           <span className="underline">
-            <span className="fancy-link">
+            <span className="fancy-link-facebook">
               <Link href="https://www.facebook.com/congeeclubkids">
                 Facebook
               </Link>
