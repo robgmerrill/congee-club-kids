@@ -68,6 +68,18 @@ a {
     background-size 0.3s calc(0.3s - var(--_s, 0s));
 }
 
+.carousel.carousel-slider .control-arrow {
+  /* display: none; */
+  color: white;
+  padding: 35px;
+  opacity: 1;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1;
+}
+
 .fancy-link:hover {
   --_p: 100%;
   --_s: 0.3s;

@@ -57,7 +57,7 @@ export default function About() {
             health therapist, mother and writer) found themselves wanting to
             tackle other fun projects that could impact others in a positive
             manner. We are so excited to embark on this journey of publishing
-            children’s books for the AAPI community{" "}
+            children’s books for our Asian American community.
           </div>
         </div>
         <div className=" mt-12">
@@ -99,6 +99,15 @@ export default function About() {
       </div>
       <div>
         <div className="text-6xl text-red-400">The Vision</div>
+        <div className="text-xl">
+          Our vision is to help kids see themselves, their traditions and their
+          cultures reflected in literature so that they can grow confident in
+          their heritage and customs. Through our products, we encourage them to
+          celebrate their diversity and embrace the gift they are to the world.
+        </div>
+      </div>
+      <div>
+        <div className="text-6xl text-red-400">So Why Congee?</div>
         <div className="text-xl">
           Our vision is to help kids see themselves, their traditions and their
           cultures reflected in literature so that they can grow confident in

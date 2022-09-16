@@ -6,6 +6,7 @@ import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NProgress from "nprogress";
 import Router from "next/router";
+import PageTransition from "../components/PageTransition";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -18,7 +19,9 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
       </div>
       <div className="h-auto" style={{ backgroundColor: "#97FFE5" }}>
-        <Component {...pageProps} />
+        <PageTransition>
+          <Component {...pageProps} />
+        </PageTransition>
       </div>
       <Footer />
     </>
