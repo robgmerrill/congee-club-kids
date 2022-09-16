@@ -85,7 +85,7 @@ export default function Hero() {
         style={{ boxShadow: "inset 0 0 5px gray" }}
       >
         <div
-          className="px-4 md:px-0 md:text-center md:w-4/5"
+          className="px-4 md:px-0 md:text-center md:w-4/5 text-lg md:text-lg lg:text-xl"
           style={{ fontFamily: "Andika" }}
         >
           Welcome! We’re Congee Club Kids, a brand that celebrates AAPI culture

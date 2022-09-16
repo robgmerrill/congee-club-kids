@@ -6,6 +6,29 @@ import MarProfile from "./mar-profile.jpg";
 import SaraProfile from "./congee-sara.jpg";
 import Image from "next/image";
 
+import { useEffect, useState } from "react";
+
+// returns the window width and height
+// based on https://usehooks.com/useWindowSize/
+export const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    height: 0,
+    width: 0,
+  });
+  const handleResize = () => {
+    setWindowSize({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowSize;
+};
+
 const StyledCard = styled.div`
   margin-top: -24px;
   height: 100%;
@@ -53,6 +76,9 @@ const Header = styled.h2`
 `;
 
 export default function NextJsCarousel() {
+  const { width } = useWindowSize();
+  console.log(width);
+
   const arrowStyles = {
     position: "absolute",
     zIndex: 2,
@@ -78,7 +104,7 @@ export default function NextJsCarousel() {
         showIndicators={false}
         showStatus={false}
         infiniteLoop={true}
-
+        centerMode={width > 478}
         // .control-arrow .control-next
       >
         {/* So Why Congee? */}
