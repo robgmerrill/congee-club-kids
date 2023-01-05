@@ -54,25 +54,36 @@ export default function Navbar() {
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="/">
               <button onClick={handleClick}>
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white ">
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white text-xl">
                   Home
                 </a>
               </button>
             </Link>
             <Link href="/about">
               <button onClick={handleClick}>
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white text-xl">
                   About us
                 </a>
               </button>
             </Link>
             <Link href="/contact">
               <button onClick={handleClick}>
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white text-xl">
                   Contact
                 </a>
               </button>
             </Link>
+            <a
+              href="https://6c5c71.myshopify.com/password"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button onClick={handleClick}>
+                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white text-xl">
+                  Shop
+                </a>
+              </button>
+            </a>
 
             {/* <Link href="https://congee-club-kids.myshopify.com/">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-yellow-300 hover:text-white">
